@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 10 IB Math Hub | Calm & Visual Prep</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #607d8b;
+            --accent-blue: #5c97bd;
+            --accent-orange: #e07a5f;
+            --accent-green: #81b29a;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a8dadc, #457b9d);
+            color: white;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .anxiety-tip {
+            background-color: #f1faee;
+            border-left: 5px solid var(--accent-green);
+            padding: 1.2rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .anxiety-tip h3 {
+            margin-top: 0;
+            color: #2a9d8f;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 650px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--accent-blue);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .card.orange-theme { border-top-color: var(--accent-orange); }
+        .card.green-theme { border-top-color: var(--accent-green); }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .card.orange-theme .btn { background-color: var(--accent-orange); }
+        .card.green-theme .btn { background-color: var(--accent-green); }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Math Explorer</h1>
+        <p>Grade 10 IB Prep &bull; Play, Visualise, and Relax</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="anxiety-tip">
+            <h3>🧘 Exam Mindfulness Tip</h3>
+            <p>If a question looks scary, don't write anything down right away. Take <strong>three deep breaths</strong>, look at the visual pattern in your head, and remember: math isn't about memorising steps; it's just a puzzle with rules. Use these tools below to see how the puzzles work!</p>
+        </div>
+
+        <div class="grid">
+            
+            <div class="card">
+                <div>
+                    <h2>1. Equation Solver & Balancer</h2>
+                    <p>Struggling with rearranging or solving? Use this tool to visualize equations as balanced scales. Whatever you do to one side, you must do to the other!</p>
+                </div>
+                <a href="https://www.mathsisfun.com/algebra/add-subtract-balance.html" target="_blank" class="btn">Play with Balance Scales</a>
+            </div>
+
+            <div class="card orange-theme">
+                <div>
+                    <h2>2. Interactive Circle Sectors</h2>
+                    <p>Change the radius and the sector angle in real-time. Watch how the arc length and area adjust dynamically as the sector grows.</p>
+                </div>
+                <a href="https://www.geogebra.org/m/mbyv67u9" target="_blank" class="btn">Visualise Sectors</a>
+            </div>
+
+            <div class="card green-theme">
+                <div>
+                    <h2>3. Dynamic Venn Diagrams</h2>
+                    <p>Unpack intersections, unions, and complements visually. Click different set regions to instantly see their mathematical notations highlighted.</p>
+                </div>
+                <a href="https://www.geogebra.org/m/XfN6W7fH" target="_blank" class="btn">Interact with Sets</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2>4. Interval Notation Builder</h2>
+                    <p>Practice writing notations like <strong>]2, 3]</strong>. Toggle open and closed endpoints on a slider and see the interval notation update instantly.</p>
+                </div>
+                <a href="https://www.mathsisfun.com/sets/intervals-builder.html" target="_blank" class="btn">Build Intervals</a>
+            </div>
+
+            <div class="card orange-theme">
+                <div>
+                    <h2>5. Desmos: Graph Domain & Range</h2>
+                    <p>See exactly how restricting a domain "chops" a graph. Adjust the slider bounds to visualize floor and ceiling range values.</p>
+                </div>
+                <a href="https://www.desmos.com/calculator/agb4f7shdf" target="_blank" class="btn">Play with Domain Limits</a>
+            </div>
+
+            <div class="card green-theme">
+                <div>
+                    <h2>6. Significant Figures Practice</h2>
+                    <p>A quick, pressure-free quiz tool to practice identifying significant figures and rounding numbers without exam stress.</p>
+                </div>
+                <a href="https://www.calculator.net/sig-fig-calculator.html" target="_blank" class="btn">Check Your Sig Figs</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created to help Grade 10 students build confident, visual, and calm mathematical minds.</p>
+    </footer>
+
+</body>
+</html>
